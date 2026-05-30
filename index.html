@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>AUSTER · decay & opulence · crumbling relics</title>
+  <title> KERNAL · decay & opulence · crumbling relics</title>
   <!-- Typography: decadent serif + faded sans -->
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -682,12 +682,12 @@
 </head>
 <body>
 
-<!-- entry modal: AUSTER invitation -->
+<!-- entry modal:  KERNAL invitation -->
 <div id="entryModalRot" class="modal-rot">
   <div class="modal-rot-block">
     <button id="closeRotModal" class="modal-rot-close"><i class="fas fa-skull"></i></button>
     <div class="modal-rot-icon"><i class="fas fa-crown"></i></div>
-    <h2 class="modal-rot-title">AUSTER</h2>
+    <h2 class="modal-rot-title"> KERNAL</h2>
     <p class="modal-rot-desc">Decay & opulence · crumbling relics · gilt-thorn armor. Garments forged from fallen empires and withered grandeur, kissed by rust and ruin.</p>
     <div class="modal-rot-buttons">
       <button id="enterRotBtn" class="btn-rot-primary">💀 ENTER THE RUIN</button>
@@ -698,7 +698,7 @@
 
 <header class="rot-header">
   <div class="nav-rot">
-    <div class="brand-rot">AUSTER<small>· DECAY</small></div>
+    <div class="brand-rot"> KERNAL<small>· DECAY</small></div>
     <nav class="nav-rot-links">
       <a href="#shopRot">RUIN VAULT</a>
       <a href="#shopRot">CRUMBLING RELICS</a>
@@ -719,7 +719,7 @@
   <section class="hero-rot">
     <div class="hero-rot-content">
       <div class="hero-rot-badge">DECAY & OPULENCE · CRUMBLING RELICS · GILT THORNS</div>
-      <h1 class="hero-rot-title">AUSTER</h1>
+      <h1 class="hero-rot-title"> KERNAL</h1>
       <div class="hero-rot-offer">first decay: <strong>15% off</strong> your first crumbling relic</div>
       <a href="#shopRot" class="btn-rot">ENTER THE RUIN →</a>
     </div>
@@ -735,9 +735,9 @@
 
 <footer>
   <div class="footer-rot">
-    <div class="footer-rot-brand">AUSTER</div>
+    <div class="footer-rot-brand"> KERNAL</div>
     <div class="footer-rot-regions">RUIN VAULT · CRUMBLING RELICS · THORN ARMORY</div>
-    <p style="font-size:0.55rem; opacity:0.7;">© 2026 AUSTER — forged from fallen empires and withered grandeur, kissed by rust and ruin.</p>
+    <p style="font-size:0.55rem; opacity:0.7;">© 2026  KERNAL — forged from fallen empires and withered grandeur, kissed by rust and ruin.</p>
   </div>
 </footer>
 
@@ -759,7 +759,7 @@
 </div>
 
 <script>
-  // AUSTER product catalog — decay & opulence theme
+  //  KERNAL product catalog — decay & opulence theme
   const rotProducts = [
     { id: 9901, name: "Gilt Shroud", category: "DECAY", original: 899, price: 764, img: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=687&auto=format&fit=crop", alt: "shroud" },
     { id: 9902, name: "Rust Tunic", category: "CRUMBLE", original: 348, price: 295, img: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=687&auto=format&fit=crop", alt: "tunic" },
@@ -902,7 +902,7 @@
   cartRotIcon?.addEventListener('click',()=>cartOverlayRotDiv.classList.add('active'));
   closeCartRotBtn?.addEventListener('click',()=>cartOverlayRotDiv.classList.remove('active'));
   cartOverlayRotDiv?.addEventListener('click',(e)=>{ if(e.target===cartOverlayRotDiv) cartOverlayRotDiv.classList.remove('active'); });
-  document.getElementById('checkoutRotBtn')?.addEventListener('click',()=>{ alert('AUSTER seals your decay offering. Your crumbling relics shimmer with rust and fallen opulence.'); cartRot=[]; renderRotCart(); cartOverlayRotDiv.classList.remove('active'); });
+  document.getElementById('checkoutRotBtn')?.addEventListener('click',()=>{ alert(' KERNAL seals your decay offering. Your crumbling relics shimmer with rust and fallen opulence.'); cartRot=[]; renderRotCart(); cartOverlayRotDiv.classList.remove('active'); });
   document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click',function(e){ const hash=this.getAttribute('href'); if(hash==="#") return; const sec=document.querySelector(hash); if(sec){ e.preventDefault(); sec.scrollIntoView({behavior:'smooth'}); } }); });
 
   renderRotProducts();
